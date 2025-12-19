@@ -1,8 +1,11 @@
+import os
+
 import torchaudio as ta
 from chatterbox.mtl_tts import ChatterboxMultilingualTTS
 from chatterbox.tts import ChatterboxTTS
 
 if __name__ == '__main__':
+    os.environ["CHATTERBOX_MODEL_REPO"] = "estevaofreitas/chatterbox-tts-ptbr"
     # Multilingual examples
     model = ChatterboxTTS.from_pretrained(device="cuda")
 
