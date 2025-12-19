@@ -4,7 +4,7 @@ from chatterbox.tts import ChatterboxTTS
 
 if __name__ == '__main__':
     # Multilingual examples
-    model = ChatterboxTTS.from_pretrained(device="cuda", model_name="estevaofreitas/chatterbox-tts-ptbr")
+    model = ChatterboxTTS.from_pretrained(device="cuda", model_name="model")
 
     # multilingual_model = ChatterboxMultilingualTTS.from_pretrained(device="cuda",
     #                                                                model_name="estevaofreitas/chatterbox-tts-ptbr")
